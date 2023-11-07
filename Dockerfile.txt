@@ -1,0 +1,6 @@
+From openjdk:8
+WORKDIR /test
+COPY . /test/
+
+RUN javac MyJavaProgram1.java
+ENTRYPOINT ["java","Main"]
